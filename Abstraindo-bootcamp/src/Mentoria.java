@@ -1,23 +1,42 @@
+import java.time.LocalDate;
 
-public class Mentoria extends Aprendizado{
+public class Mentoria extends Conteudo{
 	
-	private String data;
+	private LocalDate data;
 
-	public String getData() {
+	
+	@Override
+	public double calcularXp() {
+		// TODO Auto-generated method stub
+		return XP_PADRAO + 10;
+	}
+
+	////////////////////////////////////
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(String data) {
+
+
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	
-	public float  CalcularXp() {
-		
-		
-		
-		return 0;
-		
-		
+
+	@Override
+	public String toString() {
+		return "Mentoria [data=" + data + ", getTitulo()=" + getTitulo() + ", getDescricao()=" + getDescricao() + "]";
 	}
 
+
+	
+	
+
+	
+
+
+	
+	
+
+	
+	
 }

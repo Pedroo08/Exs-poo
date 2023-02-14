@@ -1,0 +1,45 @@
+
+public class Curso  extends Aprendizado{
+	
+	private int cargaHoraria;
+
+	
+	
+	
+	public float CalcularXp() {
+		
+		return cargaHoraria;
+		
+	}
+	
+	
+
+	
+	///////////////////
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+
+	public void setCargaHoraria(int cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Curso [cargaHoraria=" + cargaHoraria + ", getNome()=" + getNome() + ", getDescricao()=" + getDescricao()
+				+ "]";
+	}
+	
+	
+
+
+
+
+	
+	
+	
+	
+}
